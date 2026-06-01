@@ -127,10 +127,10 @@
                 <h2>Bem vindo de volta!</h2>
                 <p>- Área de Login -</p>
                 <form action="form.html" method="post">
-                    <input type="email" name="email" id="iemail" required placeholder="Email">
-                    <input type="password" name="senha" id="isenha" required placeholder="Senha">
+                    <input type="email" name="email" id="iemail" required placeholder="Email" maxlength="30">
+                    <input type="password" name="senha" id="isenha" required placeholder="Senha" minlength="8" max="16">
                     <div id="buttons">
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Entrar">
                         <a id="esqueci"  href="#">Esqueci minha senha</a>
                     </div>
                     <p>Não possuí cadastro?</p>

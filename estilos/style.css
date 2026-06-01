@@ -121,6 +121,7 @@ main > div#imagens > h2 {
 main > div#imagens > picture > img {
     border-radius: 10px;
     margin-top: 15px;
+    background-color: black;
 
     max-width: 100%;
 }
@@ -159,6 +160,7 @@ td {
 div#form {
     background-color: #a2a2a2;
     color: rgb(25, 25, 25);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.567);
     text-align: center;
 
     padding: 60px 15px;
@@ -180,7 +182,10 @@ div#form > form > input {
     padding: 15px 20px;
     margin-top: 10px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid rgb(25, 25, 25);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.415);
+
+    font-size: 1em;
 }
 
 div#buttons {
@@ -195,7 +200,7 @@ div#buttons {
 }
 
 div#buttons > input[type="submit"] {
-    padding: 10px 30px;
+    padding: 15px 30px;
     margin: 5px;
 
     flex-basis: 100px;
@@ -203,14 +208,22 @@ div#buttons > input[type="submit"] {
 
     border-radius: 8px;
     border: none;
-
     font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+    background-color: #2767fa;
+    color: white;
+}
+
+div#buttons > input[type="submit"]:hover {
+    background-color: #5184fd;
+    transition: all .3s;
 }
 
 div#buttons > a#esqueci {
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 15px 30px;
     margin: 5px;
     border-radius: 8px;
 
@@ -219,4 +232,10 @@ div#buttons > a#esqueci {
 
     background-color: #8DAFFF;
     color: rgb(25, 25, 25);
+    border: 1px solid rgb(25, 25, 25);
+}
+
+div#buttons > a#esqueci:hover {
+    background-color: #5184fd;
+    transition: all .3s;
 }
