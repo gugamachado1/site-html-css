@@ -9,8 +9,6 @@
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    width: 100vw;
     height: 100vh;
 }
 
@@ -73,13 +71,13 @@ header > nav > a:hover {
 /*Configurações para o Main*/
 main {
     background-color: var(--header);
-    width: 90vw;
+    width: 85vw;
     margin: auto;
     margin-bottom: 25px;
     padding: 40px 20px;
 
     border-radius: 25px;
-}
+} 
 
 /*Configuração Geral da Div's*/
 main > div {
@@ -109,4 +107,32 @@ main > div#listas > ul {
     text-align: justify;
     list-style-position: inside;
     columns: 2;
+}
+
+/*Imagens Dinâmicas*/
+main > div#imagens {
+    text-align: center;
+}
+
+main > div#imagens > h2 {
+    text-align: left;
+}
+
+main > div#imagens > picture > img {
+    border-radius: 10px;
+    margin-top: 15px;
+
+    max-width: 100%;
+}
+
+/*Tabelas*/
+main > div#tabelas > table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+main > div#tabelas > tr, th, td {
+    border: 2px solid black;
+    padding: 5px;
 }

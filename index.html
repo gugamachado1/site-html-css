@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/nav-header.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>Site HTML e CSS</title>
 </head>
 <body>
@@ -39,8 +40,60 @@
         </div>
         <div id="imagens">
             <h2>Imagens Dinâmicas</h2>
-            <img src="#" alt="#">
-            <img src="#" alt="#">
+            <picture> 
+                <source media="(max-width: 750px)" srcset="imagens/neymarsantos-p.jpg" type="image/jpeg">
+                <source media="(max-width: 1100px)" srcset="imagens/neymarsantos-m.jpg" type="image/jpeg">
+                <img src="imagens/neymarsantos-g.jpg" alt="Imagem Neymar Santos"> <!--Base-->
+            </picture>
+            <picture> 
+                <source media="(max-width: 750px)" srcset="imagens/neymarbarca-p.jpg" type="image/jpeg">
+                <source media="(max-width: 1100px)" srcset="imagens/neymarbarca-m.jpg" type="image/jpeg">
+                <img src="imagens/neymarbarca-g.jpg" alt="Imagem Neymar Santos"> <!--Base-->
+            </picture>
+        </div>
+        <div id="tabelas">
+            <h2>Tabelas</h2>
+            <table>
+                <tr>
+                    <th colspan="4">Título da Tabela</th>
+                </tr>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                    <th>Coluna 4</th>
+                </tr>
+                <tr>
+                    <td>Opção 1</td>
+                    <td>Opção 1</td>
+                    <td>Opção 1</td>
+                    <td>Opção 1</td>
+                </tr>
+                <tr>
+                    <td>Opção 2</td>
+                    <td>Opção 2</td>
+                    <td>Opção 2</td>
+                    <td>Opção 2</td>
+                </tr>
+                <tr>
+                    <td>Opção 3</td>
+                    <td>Opção 3</td>
+                    <td>Opção 3</td>
+                    <td>Opção 3</td>
+                </tr>
+                <tr>
+                    <td>Opção 4</td>
+                    <td>Opção 4</td>
+                    <td>Opção 4</td>
+                    <td>Opção 4</td>
+                </tr>
+                <tr>
+                    <td>Opção 5</td>
+                    <td>Opção 5</td>
+                    <td>Opção 5</td>
+                    <td>Opção 5</td>
+                </tr>
+            </table>
         </div>
     </main>
     <footer>
