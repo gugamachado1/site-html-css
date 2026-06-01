@@ -126,13 +126,97 @@ main > div#imagens > picture > img {
 }
 
 /*Tabelas*/
-main > div#tabelas > table{
+main > div#tabelas > div#table {
+    overflow: auto;
+}
+
+main > div#tabelas > div#table > table{
     text-align: center;
     border-collapse: collapse;
     width: 100%;
+    min-width: 700px;
 }
 
 main > div#tabelas > tr, th, td {
     border: 2px solid black;
     padding: 5px;
+}
+
+th {
+    background-color: #0f2261;
+}
+
+th.columns {
+    background-color: #1a223c;
+}
+
+td {
+    background-color: #a2a2a2;
+    color: black;
+}
+
+/*Formulários*/
+div#form {
+    background-color: #a2a2a2;
+    color: rgb(25, 25, 25);
+    text-align: center;
+
+    padding: 60px 15px;
+    border-radius: 10px;
+
+    max-width: 600px;
+    margin: auto;
+}
+
+div#form > p {
+    margin-bottom: 30px;
+}
+
+div#form > form > input {
+    display: block;
+    width: 80%;
+    margin: auto;
+
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+div#buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div#buttons > input[type="submit"] {
+    padding: 10px 30px;
+    margin: 5px;
+
+    flex-basis: 100px;
+    flex-grow: 1;
+
+    border-radius: 8px;
+    border: none;
+
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#buttons > a#esqueci {
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 5px;
+    border-radius: 8px;
+
+    flex-basis: 250px;
+    flex-grow: 1;
+
+    background-color: #8DAFFF;
+    color: rgb(25, 25, 25);
 }
