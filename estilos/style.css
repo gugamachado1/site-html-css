@@ -239,3 +239,33 @@ div#buttons > a#esqueci:hover {
     background-color: #5184fd;
     transition: all .3s;
 }
+
+/*Iframes*/
+#iframes {
+    text-align: center;
+}
+
+div#iframes > iframe {
+    width: 90%;
+    max-width: 600px;
+    height: 300px;
+
+    border-radius: 10px;
+}
+
+#iframes > nav#links {
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    width: 90%;
+    max-width: 600px;
+}
+
+#iframes > nav#links > a {
+    color: white;
+    font-size: 1em;
+}

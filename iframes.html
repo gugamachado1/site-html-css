@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/
-	icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <style>
-        div {
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div#container {
             background-color: rgb(170, 170, 170);
+            height: 100vh;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container > span {
+            font-size: 6rem;
         }
     </style>
 </head>
 <body>
-    <div><i class="material-icons">desktop_windows</i></div>
+    <div id="container">
+        <span class="material-symbols-outlined">
+            desktop_windows
+        </span>
+    </div>
 </body>
 </html>
