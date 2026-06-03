@@ -19,13 +19,20 @@ Grandes telas: acima de 1440px
         margin-bottom: 40px;
     }
 
-    header > nav {
+    header > nav#itens {
         flex-flow: column;
     }
 
-    header > nav > a {
+    header > nav#itens > a {
         margin: 0px;
         border-radius: 0px;
         border: 1px solid;
+    }
+}
+
+/*Config. para menu tipo hamburger*/
+@media screen and (min-width: 875px) {
+    header > span#icone {
+        display: none;
     }
 }
