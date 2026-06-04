@@ -281,8 +281,12 @@ div#buttons > a#esqueci:hover {
 }
 
 /*Iframes*/
-#iframes {
+div#iframes {
     text-align: center;
+}
+
+div#iframes > h2 {
+    text-align: left;
 }
 
 div#iframes > iframe {
