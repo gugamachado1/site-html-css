@@ -13,17 +13,19 @@
     <header>
         <!--Envelopei as palavras HTM e CSS com span para deixá-las com uma cor diferente do resto do h1-->
         <h1>Site com <span id="html">HTML</span> e <span id="css">CSS</span></h1>
-        <span id="icone"  class="material-symbols-outlined" onclick="clickMenu()">
-            menu
-        </span>
+        <div id="button_menu" onclick="clickMenu()">
+            <p>Abra o menu!</p>
+            <span id="icone"  class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
         <nav id="itens">
-            <a href="#">Listas</a>
-            <a href="#">Imagens Dinâmicas</a>
-            <a href="#">Tabelas</a>
-            <a href="#">Formulários</a>
-            <a href="#">Iframes</a>
-            <a href="#">Media Queries</a>
-            <a href="#">FlexBox</a>
+            <a href="#listas">Listas</a>
+            <a href="#imagens">Imagens Dinâmicas</a>
+            <a href="#tabelas">Tabelas</a>
+            <a href="#formularios">Formulários</a>
+            <a href="#iframes">Iframes</a>
+            <a href="#flexbox">FlexBox</a>
         </nav>
     </header>
     <main>
@@ -125,7 +127,7 @@
                 </table>
             </div>
         </div>
-        <div id="formulários">
+        <div id="formularios">
             <h2>Formulários</h2>
             <div id="form">
                 <h2>Bem vindo de volta!</h2>
@@ -151,9 +153,18 @@
             </nav>
             <iframe src="iframes.html" name="frame"></iframe>
         </div>
+        <div id="flexbox">
+            <h2>FlexBox</h2>
+            <div id="container">
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>Desenvolvido por <a href="#">Gustavo Machado</a></p>
+        <p>Desenvolvido por <a href="https://www.instagram.com/gugamachado1/" target="_blank">Gustavo Machado</a></p>
     </footer>
     <script>
         function mudouTamanho() {

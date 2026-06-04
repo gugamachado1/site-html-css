@@ -32,7 +32,7 @@ Grandes telas: acima de 1440px
 
 /*Config. para menu tipo hamburger*/
 @media screen and (min-width: 875px) {
-    header > span#icone {
+    header > div#button_menu > p, span#icone {
         display: none;
     }
 }
